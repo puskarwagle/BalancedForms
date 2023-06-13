@@ -14,10 +14,10 @@ scrollToSpans.forEach((span) => {
   span.addEventListener('click', (event) => {
     event.preventDefault();
 
-    const formId = span.textContent.toLowerCase().replace(' ', '-');
-    console.log("" formId);
+    const formId = span.textContent.toLowerCase().replace(' ', '-') + '-form';
+    console.log("Form_Id", formId);
     const formElement = document.getElementById(formId);
-    console.log(formElement);
+    console.log("Form_Element", formElement);
 
     if (formElement) {
       formElement.scrollIntoView({ behavior: 'smooth' });
