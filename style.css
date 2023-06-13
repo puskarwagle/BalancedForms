@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html {
+   font-size: 62.5%;
+}
+
+body {
+   font-family: 'Lato', sans-serif;
+   font-size: 1.6rem;
+   background-color: #d9efed;
+   color: #222;
+   padding: 0 5px;
+}
+
+.container {
+   min-width: 20rem;
+   max-width: 65rem;
+   margin: 4rem auto;
+}
+
+.heading,
+.survey-form {
+   background-color: #fff;
+   padding: 3rem;
+   border-radius: 1rem;
+   margin-bottom: 3rem;
+   box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.15);
+}
+
+.heading {
+   position: relative;
+}
+
+.survey-form {
+   font-size: 1.8rem;
+}
+
+.green-bar {
+   background-color: #008080;
+   height: 1rem;
+   width: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   border-top-left-radius: 1rem;
+   border-top-right-radius: 1rem;
+}
+
+.main-heading {
+   font-size: 3.5rem;
+   margin-bottom: 2rem;
+}
+
+.main-description {
+   margin-bottom: 2rem;
+}
+
+.instructions {
+   font-size: 1.5rem;
+   margin-top: 1rem;
+}
+
+.required {
+   font-size: 1.6rem;
+   color: #d61212;
+}
+
+label {
+   display: block;
+   font-size: 1.8rem;
+   margin: 2rem 0;
+}
+
+input,
+select,
+textarea {
+   display: block;
+   width: 100%;
+   margin: 2rem 0;
+   font-size: 1.6rem;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+   display: inline-block;
+   width: unset;
+   margin: unset;
+   margin-bottom: 1rem;
+   margin-right: .5rem;
+}
+
+.code,
+.text{
+   min-height: 2rem;
+   padding: 1rem 1rem;
+   border: none;
+   border-bottom: 1px solid #bcb9b9;
+}
+
+.dropdown {
+   min-height: 2rem;
+   padding: 1rem 0;
+   background-color: transparent;
+   border: 1px solid #bcb9b9;
+   color: #767676;
+}
+
+option {
+   font-size: 1.6rem;
+   color: #222;
+}
+
+.radio-btn-description,
+.checkbox-description {
+   margin: 2rem 0;
+}
+
+.radio-btn-label,
+.checkbox-label {
+   margin: unset;
+}
+
+textarea {
+   font-size: 1.8rem;
+   font-family: "Lato", sans-serif;
+   border: 1px solid #bcb9b9;
+}
+
+.submit {
+   font-size: 1.7rem;
+   font-weight: 600;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   color: #f4f4f4;
+   background-color: #008080;
+   border: 3px solid #008080;
+   border-radius: 1rem;
+   width: 15rem;
+   padding: 1rem 2rem;
+   margin: 4rem auto 2rem auto;
+   cursor: pointer;
+   transition: all .3s;
+}
+
+.submit:hover {
+   background-color: transparent;
+   color: #222;
+}
+
+footer {
+   text-align: center;
+   margin-top: 4rem;
+}
+
+a:link,
+a:visited {
+   color: #008080;
+}

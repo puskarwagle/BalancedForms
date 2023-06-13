@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <main>
+      <div class="container">
+
+        <header class="heading">
+          <div class="green-bar"></div>
+          <h1 id="title" class="main-heading">Balanced Scorecard</h1>
+          <p id="description" class="main-description">
+            Thank you for taking the time to help us improve our product
+          </p>
+        </header>
+        
+        <!-- Perspective Form -->
+        <form action="#" method="post" id="perspective-form" class="perspective-form survey-form">
+          <h4 style="text-align:end;">Perspective</h4>
+          <label for="code" id="code-label">Code</label>
+          <input type="number" name="code" id="code" class="code" placeholder="Enter your Code" required>
+
+          <label for="perspective" id="perspective-label">Perspective</label>
+          <input type="text" name="perspective" id="perspective" class="text" placeholder="Enter your Perspective" required>
+          
+          <input type="submit" id="submit" class="submit" value="Submit">
+        </form>
+        
+        <!-- Metrics -->
+        <form action="#" method="post" id="metric-form" class="metric-form survey-form">
+          <h4 style="text-align:end;">Metrics</h4>
+          <label for="code" id="code-label">Code</label>
+          <input type="number" name="code" id="code" class="code" placeholder="Enter your Code" required>
+
+          <label for="metric" id="metric-label">Metric</label>
+          <input type="text" name="metric" id="metric" class="text" placeholder="Enter your Metric" required>
+          
+          <input type="submit" id="submit" class="submit" value="Submit">
+        </form>
+
+        <!-- Perspective-Metric -->
+        <form action="#" method="post" id="metric-form" class="metric-form survey-form">
+          <h4 style="text-align:end;">Perspective-Metric</h4>
+          <label for="perspective_id" id="perspective_id">Perspective_Id</label>
+          <input type="number" name="perspective_id" id="perspective_id" class="code" placeholder="Enter your Perspective_Id" required>
+
+          <label for="metric_id" id="metric_id-label">Metric_Id</label>
+          <input type="text" name="metric_id" id="metric_id" class="text" placeholder="Enter your Metric_Id" required>
+          
+          <input type="submit" id="submit" class="submit" value="Submit">
+        </form>
+
+        <!-- Perspective-Metric -->
+        <form action="#" method="post" id="metric-form" class="metric-form survey-form">
+          <h4 style="text-align:end;">Perspective-Metric</h4>
+          <label for="perspective_id" id="perspective_id">Perspective_Id</label>
+          <input type="number" name="perspective_id" id="perspective_id" class="code" placeholder="Enter your Perspective_Id" required>
+
+          <label for="metric_id" id="metric_id-label">Metric_Id</label>
+          <input type="text" name="metric_id" id="metric_id" class="text" placeholder="Enter your Metric_Id" required>
+          
+          <input type="submit" id="submit" class="submit" value="Submit">
+        </form>
+        <!-- end -->
+
+        <footer>
+          <p><a href="#">CoolBytes</a></p>
+        </footer>
+
+
+      </div>
+    </main>
+
+	  <script src="script.js"></script>
+  </body>
+</html>
