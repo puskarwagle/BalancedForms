@@ -1,82 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Forms</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
 
-    <main>
-      <div class="container">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Forms</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-        <header class="heading">
-          <div class="green-bar"></div>
-          <h1 id="title" class="main-heading">Balanced Scorecard</h1>
-          <p id="description" class="main-description">
-            Thank you for taking the time to help us improve our product
-          </p>
-        </header>
-        
+<body>
+
+  <main>
+    <header class="heading">
+      <div class="green-bar"></div>
+      <h1 id="title" class="main-heading">Balanced Scorecard</h1>
+      <p id="description" class="main-description">
+        Thank you for taking the time to help us improve our product
+      </p>
+    </header>
+
+    <div class="container">
+
+      <div id="scrollto">
+        <h3>Index of Forms</h3>
+        <span>Perspective</span>
+        <span>Metrics</span>
+        <span>Perspective-Metric</span>
+        <span>Organizations</span>
+      </div>
+
+      <div id="allForms">
         <!-- Perspective Form -->
         <form action="#" method="post" id="perspective-form" class="perspective-form survey-form">
+          <div class="green-bar"></div>
           <h4 style="text-align:end;">Perspective</h4>
           <label for="code" id="code-label">Code</label>
-          <input type="number" name="code" id="code" class="code" placeholder="Enter your Code" required>
+          <input type="number" name="code" id="code-input" class="code" placeholder="Enter your Code" required>
 
           <label for="perspective" id="perspective-label">Perspective</label>
-          <input type="text" name="perspective" id="perspective" class="text" placeholder="Enter your Perspective" required>
-          
+          <input type="text" name="perspective" id="perspective-input" class="text" placeholder="Enter your Perspective"
+            required>
+
           <input type="submit" id="submit" class="submit" value="Submit">
         </form>
-        
+
         <!-- Metrics -->
-        <form action="#" method="post" id="metric-form" class="metric-form survey-form">
+        <form action="#" method="post" id="metrics-form" class="metric-form survey-form">
+          <div class="green-bar"></div>
           <h4 style="text-align:end;">Metrics</h4>
           <label for="code" id="code-label">Code</label>
-          <input type="number" name="code" id="code" class="code" placeholder="Enter your Code" required>
+          <input type="number" name="code" id="code-input" class="code" placeholder="Enter your Code" required>
 
           <label for="metric" id="metric-label">Metric</label>
-          <input type="text" name="metric" id="metric" class="text" placeholder="Enter your Metric" required>
-          
+          <input type="text" name="metric" id="metric-input" class="text" placeholder="Enter your Metric" required>
+
           <input type="submit" id="submit" class="submit" value="Submit">
         </form>
 
         <!-- Perspective-Metric -->
-        <form action="#" method="post" id="metric-form" class="metric-form survey-form">
+        <form action="#" method="post" id="perspective-metric-form" class="perspective-metric-form survey-form">
+          <div class="green-bar"></div>
           <h4 style="text-align:end;">Perspective-Metric</h4>
-          <label for="perspective_id" id="perspective_id">Perspective_Id</label>
-          <input type="number" name="perspective_id" id="perspective_id" class="code" placeholder="Enter your Perspective_Id" required>
+          <label for="perspective_id" id="perspective_id-label">Perspective_Id</label>
+          <input type="number" name="perspective_id" id="perspective_id" class="code"
+            placeholder="Enter your Perspective_Id" required>
 
           <label for="metric_id" id="metric_id-label">Metric_Id</label>
           <input type="text" name="metric_id" id="metric_id" class="text" placeholder="Enter your Metric_Id" required>
-          
+
           <input type="submit" id="submit" class="submit" value="Submit">
         </form>
 
-        <!-- Perspective-Metric -->
-        <form action="#" method="post" id="metric-form" class="metric-form survey-form">
-          <h4 style="text-align:end;">Perspective-Metric</h4>
-          <label for="perspective_id" id="perspective_id">Perspective_Id</label>
-          <input type="number" name="perspective_id" id="perspective_id" class="code" placeholder="Enter your Perspective_Id" required>
+        <!-- Organizations -->
+        <form action="#" method="post" id="organizations-form" class="organizations-form survey-form">
+          <div class="green-bar"></div>
+          <h4 style="text-align:end;">Organizations</h4>
 
-          <label for="metric_id" id="metric_id-label">Metric_Id</label>
-          <input type="text" name="metric_id" id="metric_id" class="text" placeholder="Enter your Metric_Id" required>
-          
+          <label for="vison_id" id="vison_id-label">Vison_Id</label>
+          <input type="number" name="vison_id" id="vison_id" class="code" placeholder="Enter your Vison_Id" required>
+
+          <label for="organization_id" id="organization_id-label">Organization_Id</label>
+          <input type="text" name="organization_id" id="organization_id" class="text"
+            placeholder="Enter your Organization_Id" required>
+
           <input type="submit" id="submit" class="submit" value="Submit">
         </form>
-        <!-- end -->
 
-        <footer>
-          <p><a href="#">CoolBytes</a></p>
-        </footer>
+      </div> <!-- #allForms -->
+    </div> <!-- .container -->
 
+    <footer>
+      <p><a href="#">CoolBytes</a></p>
+    </footer>
+  </main>
 
-      </div>
-    </main>
+  <script src="script.js"></script>
+</body>
 
-	  <script src="script.js"></script>
-  </body>
 </html>

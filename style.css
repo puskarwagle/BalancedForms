@@ -18,27 +18,71 @@ body {
    padding: 0 5px;
 }
 
-.container {
-   min-width: 20rem;
-   max-width: 65rem;
-   margin: 4rem auto;
+main {
+  display: flex;
+  flex-direction: column;
+  border:0px solid rgb(19, 120, 209);
 }
 
-.heading,
+.container {
+  padding: 0 4rem;
+   display:flex;
+   border:0px solid red;
+}
+
+#allForms {
+  padding:0rem 8rem;
+  display: flex;
+  gap:2rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  border:0px solid blue;
+}
+
+#scrollto {
+  border:0px solid orange;
+  display: flex;
+  flex-direction: column;
+  height:fit-content;
+  background-color: #fff;
+  padding:1rem;
+  border-radius: 1rem;
+}
+#scrollto span {
+  white-space: nowrap;
+  padding:1rem 0;
+  border-bottom: 1px solid black;
+  color: #222;
+  cursor: pointer;
+}
+#scrollto span:hover {
+  color: #000;
+}
+
 .survey-form {
+   scroll-snap-align: center;
    background-color: #fff;
    padding: 3rem;
    border-radius: 1rem;
    margin-bottom: 3rem;
    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.15);
+   min-width:100%;
 }
 
 .heading {
    position: relative;
+   background-color: #fff;
+   padding: 3rem;
+   border-radius: 1rem;
+   margin-bottom: 3rem;
+   box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.15);
+   min-width: 50rem;
+   margin: 4rem auto;
 }
 
 .survey-form {
    font-size: 1.8rem;
+   position: relative;
 }
 
 .green-bar {
