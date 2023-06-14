@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Forms</title>
+  <title>Balanced Scorecards Forms</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -28,6 +28,7 @@
         <span>Metrics</span>
         <span>Perspective-Metric</span>
         <span>Organizations</span>
+        <span>Vision</span>
       </div>
 
       <div id="allForms">
@@ -35,8 +36,9 @@
         <form action="#" method="post" id="perspective-form" class="perspective-form survey-form">
           <div class="green-bar"></div>
           <h4 style="text-align:end;">Perspective</h4>
+
           <label for="code" id="code-label">Code</label>
-          <input type="number" name="code" id="code-input" class="code" placeholder="Enter your Code" required>
+          <input type="number" name="code" id="code-pers-input" class="code" placeholder="Enter your Code" required>
 
           <label for="perspective" id="perspective-label">Perspective</label>
           <input type="text" name="perspective" id="perspective-input" class="text" placeholder="Enter your Perspective"
@@ -50,7 +52,7 @@
           <div class="green-bar"></div>
           <h4 style="text-align:end;">Metrics</h4>
           <label for="code" id="code-label">Code</label>
-          <input type="number" name="code" id="code-input" class="code" placeholder="Enter your Code" required>
+          <input type="number" name="code" id="code-metr-input" class="code" placeholder="Enter your Code" required>
 
           <label for="metric" id="metric-label">Metric</label>
           <input type="text" name="metric" id="metric-input" class="text" placeholder="Enter your Metric" required>
@@ -62,12 +64,13 @@
         <form action="#" method="post" id="perspective-metric-form" class="perspective-metric-form survey-form">
           <div class="green-bar"></div>
           <h4 style="text-align:end;">Perspective-Metric</h4>
-          <label for="perspective_id" id="perspective_id-label">Perspective_Id</label>
-          <input type="number" name="perspective_id" id="perspective_id" class="code"
+
+          <label for="perspective_id" id="perspective_metr-label">Perspective_Id</label>
+          <input type="number" name="perspective_id" id="perspective_metric-id" class="code"
             placeholder="Enter your Perspective_Id" required>
 
           <label for="metric_id" id="metric_id-label">Metric_Id</label>
-          <input type="text" name="metric_id" id="metric_id" class="text" placeholder="Enter your Metric_Id" required>
+          <input type="text" name="metric_id" id="pers_metric_id" class="text" placeholder="Enter your Metric_Id" required>
 
           <input type="submit" id="submit" class="submit" value="Submit">
         </form>
@@ -98,6 +101,36 @@
           
           
                       <input type="submit" id="submit" class="submit" value="Submit">
+        </form>
+
+        <!-- Visions -->
+        <form action="#" method="post" id="perspective-metric-form" class="perspective-metric-form survey-form">
+          <div class="green-bar"></div>
+          <h4 style="text-align:end;">Perspective-Metric</h4>
+
+          <label for="name" id="visions_name">Name</label>
+          <input type="number" name="name" id="visions_name" class="code"
+            placeholder="Enter your Name" required>
+
+          <label for="description" id="description-label">description</label>
+          <input type="text" name="description" id="visions_description" class="text" placeholder="Enter your description" required>
+
+          <input type="submit" id="submit" class="submit" value="Submit">
+        </form>
+
+        <!-- Visions -->
+        <form action="#" method="post" id="vision-form" class="visions-form survey-form">
+          <div class="green-bar"></div>
+          <h4 style="text-align:end;">Visions</h4>
+
+          <label for="name" id="visions_name">Name</label>
+          <input type="number" name="name" id="visions_name" class="code"
+            placeholder="Enter your Name" required>
+
+          <label for="description" id="description-label">Description</label>
+          <input type="text" name="description" id="visions_description" class="text" placeholder="Enter your description" required>
+
+          <input type="submit" id="submit" class="submit" value="Submit">
         </form>
 
       </div> <!-- #allForms -->
